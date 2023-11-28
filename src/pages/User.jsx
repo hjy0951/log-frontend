@@ -91,7 +91,7 @@ const User = () => {
   return (
     <Container>
       <Main>
-        <Header isCurrentUser={currentUserId === user.id} />
+        <Header isCurrentUser={user.id ? currentUserId === user.id : false} />
         <div style={{ height: "90px" }}></div>
         <Diary>
           <AvatarContainer>
